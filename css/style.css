@@ -1,0 +1,520 @@
+html{
+	background: url(../img/background.jpg) center no-repeat;
+	background-size: cover;
+}
+
+html , body{
+	height: 100%;
+	margin:0;
+	padding: 0;
+	width: 100%;
+	min-width: 1100px;
+}
+/*
+***************
+*=page formation
+***************
+*/
+.section{
+	width: 60%;
+	height: 100%;
+	margin: auto;
+}
+.section_enpage,.section_uspage{
+	height: 100%;
+	width: 33.28%;
+	float: left;
+}
+
+.content_en,.content_us{
+	width:66.72%;
+	height: 100%;
+	display: inline;
+	float: left;
+	overflow: auto;
+	background-color: rgba(255,255,255,0.15);
+}
+.projects_name, .project_description,.section_actpage{
+	width:33.28%;
+	height: 100%;
+	display: inline;
+	float: left;
+}
+.projects_name, .project_description{
+	overflow: auto;
+}
+
+/*
+***************
+*=layout
+***************
+*/
+.En,.Act,.Us{
+	width:33.2%;
+	height: 100%;
+	display: inline;
+	float: left;
+}
+.Act{
+	border-right: 1px rgba(255,255,255,0.5) dashed;
+	border-left: 1px rgba(255,255,255,0.5) dashed;
+}
+.section_enpage .En,.section_actpage .Act,.section_uspage .Us{
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+}
+
+.header{
+	height: 70px;
+	width: 310px;
+	background-color: rgba(255,194,32,0.75);
+	position: relative;
+	left: 300px;
+	margin-top: 20px;
+}
+.timeline{
+	width: 11px;
+	height: 100%;
+	background-color: rgba(255,194,32,0.75);
+	position: relative;
+	left: 450px;
+	z-index: -1;
+	display: inline;
+	float: left;
+}
+.strips{
+	width: 98%;
+	height: 100%;
+	display: inline;
+	float: left;
+	z-index: 1;
+}
+.strip_right{
+	height: 51px;
+	width:200px;
+	display: block;
+	margin-top: 50px;
+	position:relative;
+	left:  420px;
+}
+.strip_left{
+	height: 51px;
+	width:200px;
+	display: block;
+	margin-top: 50px;
+	position: relative;
+	left: 270px;
+}
+.big_strip{
+	height: 112px;
+	width: 655px;
+	position: relative;
+	left: 115px;
+	margin-top: 50px;
+}
+.event_date{
+	display: inline;
+	float: left;
+	height: 35px;
+	width: 35px;
+	border: 8px rgba(255,194,32,0.75) solid;
+	background-color: rgb(60,60,60);
+}
+.event_date2{
+	height: 90px;
+	width: 90px;
+	margin: auto;
+	border: 11px rgba(255,194,32,0.75) solid;
+	background-color: rgb(60,60,60);
+	position: relative;
+	z-index: 1;
+}
+.event_tag{
+	display: inline;
+	float: left;
+	width: 149px;
+	background-color: rgba(0,0,0,0.5);
+	height: 51px;
+}
+.big_strip img{
+	position: relative;
+	top: -112px;
+	z-index: 0;
+	height: 112px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.space{
+	height: 80px;
+}
+.project{
+	background: url(../img/mazo.jpg) no-repeat;
+	width: 320px;
+	height: 160px; 
+	margin: auto;
+	margin-top: 10px;
+	padding-bottom: 30px;
+	border-bottom: 2px rgb(255,255,255) solid;
+}
+.dark{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.4);
+}
+.overlay{
+	width: 90%;
+	margin: auto;
+	margin-top: 15px;
+	background-color: rgba(0,0,0,0.5);
+	position: relative;
+	z-index: 1;
+}
+.contact{
+	width: 90%;
+	height: 450px;
+	margin: auto;
+	margin-top: 15px;
+	min-width: 700px;
+	background-color: rgba(0,0,0,0.5);
+}
+.reach_us{
+	width: 90%;
+	height: 50%;
+	margin: auto;
+	margin-top: 15px;
+	background-color: rgba(0,0,0,0.5);
+}
+.labels{
+	width:20%;
+	display: inline;
+	float: left;
+}
+
+.inputs{
+	margin-top: 5px;
+	width: 72%;
+	display: inline;
+	float: left;
+}
+input,textarea{
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	font-size: 15px;
+	padding-left: 10px;
+	font-family: source sans pro;
+	border: none;
+}
+textarea:focus, input:focus{
+	outline-color: rgb(255,194,32);
+}
+input{
+	height: 40px;
+}
+textarea{
+	height: 150px;
+}
+#button{
+	width: 100px;
+	float: right;
+	background-color: rgb(255,194,32);
+	color: white;
+	font-family: source sans pro bold;
+	font-size: 15px;
+	height: 35px;
+}
+.adress{
+	display: inline;
+	float: left;
+	max-width: 200px;
+	margin: 50px;
+	margin-left: 80px;
+}
+
+
+/*
+***************
+*=texts
+***************
+*/
+.section span {
+	display: block;
+	text-align: center;
+	position: relative;
+	top: 200px;
+	font-size: 140px;
+	font-family: source sans pro;
+	color:white;
+}
+
+.header p{
+	margin:0;
+	color: white;
+	font-size: 33px;
+	text-align: center;
+	font-family: brandon grotesque light;
+	padding-top: 15px;
+}
+.event_date p{
+	font-size: 11px;
+	color: white;
+	margin: 1px;
+	text-align: center;
+	font-family: brandon grotesque medium;
+	
+}
+.event_tag p{
+	font-family: brandon grotesque medium;
+	color: white;
+	text-align: center;
+	font-size: 11px;
+	padding-top: 5px;
+}
+.event_date2 p{
+	font-size: 12px;
+	color: white;
+	text-align: center;
+	margin: 5px;
+	font-family: brandon grotesque medium;
+
+}
+
+.section_enpage span,.section_actpage span,.section_uspage span{
+	display: block;
+	text-align: center;
+	position: relative;
+	top: 200px;
+	font-size: 140px;
+	font-family: source sans pro;
+	color:white;
+}
+.section_enpage p,.section_actpage p,.section_uspage p,.section p{
+	display: block;
+	max-width: 300px;
+	text-align: center;
+	margin: auto;
+	margin-top: 15px;
+	position: relative;
+	top: 165px;
+	font-size: 15px;
+	font-family: source sans pro;
+	color:white;
+	letter-spacing: 1px;
+}
+em{
+	color: rgb(255,194,32);
+	font-style: normal;
+	font-size: 18px;
+
+}
+.project span, .project em{
+	
+	margin-left: 15px;
+	padding-left: 5px;
+	padding-right: 10px;
+	background-color: rgba(0,0,0,0.8);
+	text-align: left;
+	position: relative;
+	top: 100px;
+}
+.project em{
+	font-family: source sans pro light;
+	font-size: 15px;
+	color: white;
+	margin-bottom: 5px;
+	margin-right: 250px;
+}
+.project span{
+	font-family: source sans pro ;
+	font-size: 18px;
+	margin-bottom: 0px;
+	color: rgb(255,194,32);
+}
+
+.project p{
+	color: white;
+	font-size: 15px;
+	font-family: source sans pro bold;
+	display: block;
+	text-align: right;
+	position: relative;
+	top: 105px;
+	background-color:rgba(0,0,0,0)
+
+}
+.project img{
+	position: relative;
+	top: 5px;
+}
+.overlay h2{
+	color: white;
+	margin: 0px;
+	margin-right: 15px;
+	display: block;
+	text-align: right;
+	padding-top: 15px;
+	font-family: source sans pro light;
+	font-size: 25px;
+}
+.overlay h1{
+	color: rgb(255,194,32);
+	margin: 0px;
+	margin-right: 15px;
+	margin-left: 45px;
+	margin-bottom: 25px;
+	display: block;
+	text-align: right;
+	border-bottom: 3px rgb(255,194,32) solid;
+	padding-bottom: 5px;
+	font-family: source sans pro bold;
+	font-size: 45px;
+	margin-top: 5px;
+}
+.overlay h3{
+	font-family: source sans pro light;
+	font-size: 18px;
+	margin-top: 5px;
+	color: white;
+	text-decoration: underline;
+}
+.overlay p{
+	font-family: source sans pro light;
+	font-size: 16px;
+	color: white;
+}
+.overlay p, .overlay h3{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.content_us h1{
+	color: white;
+	margin: 25px;
+	display: block;
+	text-align: center;
+	border-bottom: 2px white solid;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	font-family: source sans pro black;
+	font-size: 37px;
+	margin-top: 5px;
+}
+.labels p{
+	margin: 0;
+	margin-left: 70px;
+	padding-bottom: 24px;
+	padding-top: 18px;
+	color: white;
+	font-size: 15px;
+	font-family: source sans pro light;
+}
+.block p{
+	text-align: center;
+	margin: 0;
+	font-family: source sans pro bold;
+	color: white;
+
+}
+.adress p{
+	text-align: center;
+	margin: 0;
+	font-size: 13px;
+	font-family: source sans pro;
+	color: white;
+}
+/*
+***************
+*=hover
+***************
+*/
+
+.En:hover {
+	background-color: rgba(0,0,0,0.5);
+}
+.Us:hover {
+	background-color: rgba(0,0,0,0.5);
+}
+.Act:hover {
+	background-color: rgba(0,0,0,0.5);
+}
+.logo:hover{
+	background-color: rgba(0,0,0,0.6);
+}
+.dark:hover{
+	background-color: rgba(0,0,0,0);
+}
+.element:hover{
+	background-color: rgba(0,0,0,0.6);
+}
+#button:hover{
+	background-color: white;
+	color: rgb(255,194,32);
+	text-shadow:2px 2px rgba(0,0,0,0.1);
+}
+/*
+***************
+*=extras
+***************
+*/
+.block{
+	width: 180px;
+	position: absolute;
+	left: 80px;
+	top: 0;
+	z-index: 1;
+	
+}
+
+.logo,.element{
+	background-color: rgba(0,0,0,0.5);
+}
+.element{
+	float: left;
+	display: block;
+	height: 60px;
+	width: 60px;
+}
+
+/*.element{
+	display: none;
+}*/
+
+.logo img{
+	padding: 10px;
+	display: block;
+	margin-left: auto;
+    margin-right: auto ;
+}
+.element img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.caption{
+	background-color: #4c4c4c;
+	opacity: 0.8;
+	width: 250px;
+	height: 30px;
+	position: absolute;
+	bottom: 0;
+	right: 30px;
+	z-index: 0;
+}
+.content_en .caption ,.project_description .caption,.section_uspage .caption {
+	width: 90px;
+	height: 75px;
+	letter-spacing: 1px;
+
+}
+.caption p{
+	text-align: center;
+	color: white;
+	font-size: 14px;
+	font-family: source sans pro;
+	margin-top: 8px;
+	position: relative;
+	top: 0px;
+}
+
