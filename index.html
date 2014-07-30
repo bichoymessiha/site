@@ -5,6 +5,174 @@
 	<title>Enactus UFE</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/960_24_col.css">
+	<script type="text/javascript" src = "js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		var animation = 1;
+		$("body").css("cursor", "url(img/cursor1.png), auto");
+		$("body").css("overflow", "hidden");
+		$("a:has(.element)").css("cursor", "url(img/cursor2.png), auto");
+		$(".En").css("cursor", "url(img/cursor2.png), auto").hide();
+		$(".Act").css("cursor", "url(img/cursor2.png), auto").hide();
+		$(".Us").css("cursor", "url(img/cursor2.png), auto").hide();
+		$(".logo").css("cursor", "url(img/cursor2.png), auto");
+		$(".En").fadeIn(
+						400,
+						function(){
+							$(".Act").fadeIn(
+								400,
+							function(){
+								$(".Us").fadeIn(400); //end Us fadeIn
+								setTimeout(function(){
+    							animation = 0}
+    								, 400);
+							}); //end Act fadeIn
+						}); //end En fadeIn
+			$(".En").hover(function(){
+				if(animation == 0)
+				{
+			$(this).stop().animate(
+			{
+				width: "45.2%"
+
+			}, 400);
+			$(".Act").stop().animate(
+			{
+				width: "20.2%"
+
+			}, 400);
+			$(".Us").stop().animate(
+			{
+				width: "20.2%"
+
+			}, 400);
+				}
+
+
+		},
+		function(){
+			if(animation == 0)
+			{
+			$(this).stop().animate(
+			{
+				width: "33.2%"
+
+			}, 400);
+			$(".Act").stop().animate(
+			{
+				width: "33.2%"
+
+			}, 400);
+			$(".Us").stop().animate(
+			{
+				width: "33.2%"
+
+			}, 400);
+
+			}
+		}
+
+		); //end hover En
+		$(".Act").hover(function(){
+				if(animation == 0)
+				{
+			$(this).stop().animate(
+			{
+				width: "45.2%"
+
+			}, 400);
+			$(".En").stop().animate(
+			{
+				width: "20.2%"
+
+			}, 400);
+			$(".Us").stop().animate(
+			{
+				width: "20.2%"
+
+			}, 400);
+				}
+
+
+		},
+		function(){
+			if(animation == 0)
+			{
+			$(this).stop().animate(
+			{
+				width: "33.2%"
+
+			}, 400);
+			$(".En").stop().animate(
+			{
+				width: "33.2%"
+
+			}, 400);
+			$(".Us").stop().animate(
+			{
+				width: "33.2%"
+
+			}, 400);
+
+			}
+		}
+
+		); //end hover Act
+		$(".Us").hover(function(){
+				if(animation == 0)
+				{
+			$(this).stop().animate(
+			{
+				width: "45.2%"
+
+			}, 400);
+			$(".En").stop().animate(
+			{
+				width: "20.2%"
+
+			}, 400);
+			$(".Act").stop().animate(
+			{
+				width: "20.2%"
+
+			}, 400);
+				}
+
+
+		},
+		function(){
+			if(animation == 0)
+			{
+			$(this).stop().animate(
+			{
+				width: "33.2%"
+
+			}, 400);
+			$(".En").stop().animate(
+			{
+				width: "33.2%"
+
+			}, 400);
+			$(".Act").stop().animate(
+			{
+				width: "33.2%"
+
+			}, 400);
+
+			}
+		}
+
+		); //end hover Us
+
+		$("a").click(function(event){
+			event.preventDefault();
+		});
+		setTimeout(function(){
+    		$("a").unbind("click")}
+    		, 1250);
+	}); //end ready
+
+</script>
 </head>
 <body>
 	
